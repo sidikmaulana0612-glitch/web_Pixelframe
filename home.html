@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Fotografer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <img src="bahan foto/logo.png" style="width: 50px" />
+      <h1 style="padding-left: 200px">PIXELFRAME_</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <img src="bahan foto/logo.png" width="70px" />
+      <h1>Capture Your Moment</h1>
+      <p>Fotografi modern,Engangement dan profesional</p>
+      <a href="#portfolio" class="btn">Lihat Karya</a>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <h2 style="color: aliceblue">Portfolio</h2>
+      <h1 style="padding-top: 0%">Moment Recap 2026</h1>
+      <p>
+        Moment Sepesial Bareng Keluarga & Teman Kenangan terindah yang harus
+        diabadikan
+      </p>
+      <div class="grid">
+        <img src="bahan foto/foto (1).jpg" onclick="openLightbox(this)" />
+        <img src="bahan foto/foto (2).jpg" onclick="openLightbox(this)" />
+        <img src="bahan foto/foto (3).jpg" onclick="openLightbox(this)" />
+        <img src="bahan foto/foto (7).jpg" onclick="openLightbox(this)" />
+        <img src="bahan foto/foto (8).jpg" onclick="openLightbox(this)" />
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="grid">
+        <img
+          src="bahan foto/foto lengskep (1).jpg"
+          onclick="openLightbox(this)"
+        />
+        <img
+          src="bahan foto/foto lengskep (2).jpg"
+          onclick="openLightbox(this)"
+        />
+        <img
+          src="bahan foto/foto lengskep (3).jpg"
+          onclick="openLightbox(this)"
+        />
+        <img
+          src="bahan foto/foto lengskep (4).jpg"
+          onclick="openLightbox(this)"
+        />
+        <img src="bahan foto/foto potret 5.jpg" onclick="openLightbox(this)" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2 style="color: aliceblue">Tentang Kami</h2>
+      <p>
+        Saya adalah fotografer profesional yang fokus pada wisuda,Engangement
+        portrait, dan event photography dengan gaya cinematic modern.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 style="color: aliceblue">Hubungi Saya</h2>
+      <form>
+        <input type="text" placeholder="Nama" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Pesan"></textarea>
+        <button>Kirim</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <p style="text-align: center">
+      Website ini masih dalam tahap uji coba & pengembangan
+    </p>
+    <p style="text-align: center">Tanks Your Suport</p>
+    <footer>
+      <p>© 2026 PixelFrame_Merasi</p>
+      <p>© www.Sidik Maulana.com</p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
